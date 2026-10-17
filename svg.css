@@ -1,0 +1,14 @@
+@keyframes svg {
+  0% {
+    fill: green;
+  }
+  50% {
+    fill: red;
+  }
+  10% {
+    fill: green;
+  }
+}
+.svg {
+  animation: svg linear 4s infinite alternate;
+}

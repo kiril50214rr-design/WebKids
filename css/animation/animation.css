@@ -1,0 +1,162 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.bone {
+  fill: none;
+  stroke: #f9f5df;
+  stroke-width: 15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.thin {
+  stroke-width: 8;
+}
+.left-arm {
+  transform-origin: 195px 220px;
+  animation: armLeft 1.6s ease-in-out infinite alternate;
+}
+.right-arm {
+  transform-origin: 305px 220px;
+  animation: armRight 1.6s ease-in-out infinite alternate;
+}
+.left-leg {
+  transform-origin: 224px 365px;
+  animation: legLeft 1.6s ease-in-out infinite alternate;
+  animation-delay: 1.6s;
+}
+.right-leg {
+  transform-origin: 276px 365px;
+  animation: legRight 1.6s ease-in-out infinite alternate;
+}
+.dancer {
+  animation: bounce 1.6s ease-in-out infinite alternate;
+}
+@keyframes armRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+}
+@keyframes armLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@keyframes legLeft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+@keyframes legRight {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+}
+.left-arm2 {
+  transform-origin: 195px 220px;
+  animation: armLeft2 1.6s ease-in-out infinite alternate;
+  animation-delay: 1.6s;
+  transform: rotate(100deg);
+}
+.right-arm2 {
+  transform-origin: 305px 220px;
+  animation: armRight2 1.6s ease-in-out infinite alternate;
+  animation-delay: 1.6s;
+  transform: rotate(-100deg);
+}
+.left-leg2 {
+  transform-origin: 224px 365px;
+  animation: legLeft2 1.6s ease-in-out infinite alternate;
+  animation-delay: 1.6s;
+}
+.right-leg2 {
+  transform-origin: 276px 365px;
+  animation: legRight2 1.6s ease-in-out infinite alternate;
+}
+.dancer2 {
+  animation: bounce2 1.6s ease-in-out infinite alternate;
+}
+@keyframes armRight2 {
+  0% {
+    transform: rotate(-100deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes armLeft2 {
+  0% {
+    transform: rotate(100deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes bounce2 {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@keyframes legLeft2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(60deg);
+  }
+}
+@keyframes legRight2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-60deg);
+  }
+}
+.text {
+  font-family: "Nosifer", sans-serif;
+  color: red;
+  font-size: 2vw;
+  width: 50vw;
+  text-align: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  width: 40vw !important;
+  font-size: max(16px, 2px) !important;
+}
+svg {
+  width: 30vw;
+  height: auto;
+}

@@ -1,0 +1,165 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 5.2vw;
+}
+.logo {
+  width: 195px;
+  height: 75px;
+}
+
+header ul {
+  display: flex;
+  gap: 3.125vw;
+  list-style: none;
+}
+@media (max-width: 789px) {
+  header ul {
+    display: flex;
+    gap: 3.125vw;
+    list-style: none;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+body {
+  margin: 0px;
+  position: absolute;
+  font-family: "Inter", sans-serif;
+}
+.menu {
+  width: 50%;
+}
+@media (max-width: 1350px) {
+  .menu {
+    width: auto;
+  }
+}
+@media (max-width: 789px) {
+  .menu {
+    width: auto;
+    position: absolute;
+    background-color: white;
+    right: 0px;
+    top: 0px;
+    transform: translateX(100%);
+    transition: all 1.5s linear;
+  }
+  .menu.active {
+    transform: translateX(0%);
+  }
+}
+
+header li {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.fon {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+.sabtitle {
+  background-color: antiquewhite;
+  width: max-content;
+  padding: 14px 46px 14px 16px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border-radius: 3px;
+  border: 1px solid greenyellow;
+  margin-bottom: 24px;
+}
+main {
+  position: fixed;
+  z-index: 2;
+  top: 19.53vh;
+  padding: 0 5.2vw;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.sabtitle span {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(5, 141, 5);
+}
+.title {
+  font-size: 4vw;
+  margin-bottom: 8vh;
+}
+.title span {
+  color: #42a934;
+}
+.body {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+@media (max-width: 789px) {
+  .body {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.right img {
+  width: 43vw;
+}
+.worc {
+  display: flex;
+
+  gap: 20px;
+}
+.worc span {
+  padding: 13px;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.o {
+  background-color: red;
+  color: azure;
+}
+.t {
+  background-color: blue;
+  color: azure;
+}
+.th {
+  background-color: yellow;
+  color: black;
+}
+.figma {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#menu {
+  display: none;
+}
+@media (max-width: 789px) {
+  #menu {
+    display: block;
+  }
+}
+#clous {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+}
+@media (max-width: 789px) {
+  #clous {
+    display: block;
+  }
+}

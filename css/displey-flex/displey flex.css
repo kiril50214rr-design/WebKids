@@ -1,0 +1,109 @@
+img {
+  width: 30vw;
+  height: auto;
+}
+.picture {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+}
+.skuy {
+  width: 100vw;
+  height: 70vh;
+  background-color: aqua;
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+}
+.gress {
+  width: 100vw;
+  height: 30vh;
+  background-color: green;
+}
+.tress {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+body {
+  margin: 0px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+}
+.tree1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.tree2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.square {
+  width: 30px;
+  height: 50px;
+  background-color: brown;
+}
+.top {
+  border-radius: 50%;
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+.bottom {
+  width: 20px;
+  height: 200px;
+  background-color: brown;
+}
+.san-wrapper {
+  display: flex;
+  justify-content: end;
+  height: 70vh;
+}
+.san {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.baze {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+}
+.hause {
+  display: flex;
+}
+.ruf {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid brown;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.windou {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  align-self: center;
+}
+.dor {
+  width: 50px;
+  height: 100px;
+  background-color: brown;
+  align-self: end;
+}

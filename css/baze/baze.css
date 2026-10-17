@@ -1,0 +1,9 @@
+img {
+  width: 300px;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid red;
+  border: 1px dashed red;
+  border: 1px dotted red;
+  margin: 20px 20px 20px 20px;
+}
