@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>battelship</title>
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./battelship.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main class="game">
+      <div class="content">
+        <a href="../index.html">Back</a>
+        <h1>⚓️ Battelship</h1>
+        <div class="info">
+          <div class="info-card">
+            🚢 Enemi ships: <span id="enemiShipsLeft">0</span>
+          </div>
+          <div class="info-card">🎯 Shots: <span id="shots">0</span></div>
+        </div>
+        <div class="message" id="message">Shoot at the enemy field!</div>
+        <div class="boards">
+          <section>
+            <h2>Your field</h2>
+            <div class="board" id="playerBoard"></div>
+          </section>
+
+          <section>
+            <h2>Enemy field</h2>
+            <div class="board" id="enemyBoard"></div>
+          </section>
+        </div>
+        <button class="btn" id="restart"></button>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="battelship.js"></script>
+  </body>
+</html>

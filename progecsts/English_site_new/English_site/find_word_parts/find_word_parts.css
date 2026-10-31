@@ -1,0 +1,29 @@
+.wrapper_img img {
+  width: 60px;
+  height: auto;
+  opacity: 0.2;
+}
+.wrapper_words {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: greenyellow;
+}
+.wrapper_words div {
+  padding: 4px;
+  position: absolute;
+  background-color: green;
+  color: greenyellow;
+}
+.wrapper_img {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.wrapper_img img.active {
+  opacity: 1;
+}

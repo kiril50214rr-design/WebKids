@@ -1,0 +1,8 @@
+.eg {
+  display: flex;
+  flex-direction: row;
+}
+.po {
+  width: 700px;
+  height: 500px;
+}

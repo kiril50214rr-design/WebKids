@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  color: white;
+  background: black;
+}
+h1 {
+  font-family: "Mystery Quest", system-ui;
+  font-size: 70px;
+}
+.ghost {
+  transform: translateX(-500px);
+  transition: all 2s linear;
+  width: 300px;
+}
+.ghost_2 {
+  transform: translateX(500px);
+  transition: all 2s linear;
+  width: 300px;
+}
+p {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Pangolin", cursive;
+  color: antiquewhite;
+}
+.night-rider {
+  display: flex;
+  margin: 0 auto;
+}
+.span_1 {
+  color: darkred;
+}
+.span_2 {
+  color: indianred;
+}
+button {
+  padding: 30px;
+  background-color: red;
+  margin: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: darkred;
+  transition: all 1s linear;
+}
+@media (max-width: 1024px) {
+  .ghost {
+    width: 100px;
+  }
+  .ghost_2 {
+    width: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  P {
+    font-size: 5px;
+  }
+  .night-rider {
+    font-size: 8px;
+  }
+}
+a {
+  color: aliceblue;
+  text-decoration: 0;
+}
+a:hover {
+  color: blue;
+  transition: all 1s linear;
+}

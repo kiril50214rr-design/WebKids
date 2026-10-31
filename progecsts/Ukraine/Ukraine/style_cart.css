@@ -1,0 +1,28 @@
+h2 {
+  text-align: center;
+}
+a {
+  display: flex;
+  width: max-content;
+  padding: 20px;
+  text-decoration: none;
+  color: blue;
+  transition: all 0.5s linear;
+}
+a:hover {
+  color: yellow;
+  background-color: blue;
+}
+.cart_section {
+  display: flex;
+  width: 100%;
+}
+.cart_section div {
+  width: 50%;
+}
+.cart_section img {
+  width: 100%;
+}
+h1 {
+  color: black;
+}

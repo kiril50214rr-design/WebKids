@@ -1,0 +1,70 @@
+.content {
+  padding: 20px;
+}
+.words {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.word {
+  padding: 5px 5px;
+  border-radius: 8px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.circles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.word.active {
+  background: gray;
+}
+.word::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: -200px;
+  left: -200px;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 1s linear;
+}
+.word {
+  color: white;
+  border-radius: 50px;
+  background-color: aqua;
+  width: max-content;
+  padding: 10px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.word:hover::before {
+  top: -25px;
+  left: -25px;
+}
+.word::after {
+  content: "";
+  position: relative;
+  z-index: 10;
+  color: white;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.right {
+  width: 375px;
+  height: 375px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.cb {
+  padding: 10px;
+}
+.scramblet {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+span {
+  width: max-content;
+}
+.correct {
+  color: blue;
+  text-transform: capitalize;
+}

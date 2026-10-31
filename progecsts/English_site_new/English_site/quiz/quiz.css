@@ -1,0 +1,28 @@
+.color-quiz_btn--correct {
+  border: 5px solid green;
+}
+.color-quiz_btn--wrong {
+  border: 5px solid red;
+}
+.tile {
+  width: 100px;
+  height: 100px;
+
+  color: red;
+}
+.pazl {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tile.active {
+  background-color: blue;
+}
+.part {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}

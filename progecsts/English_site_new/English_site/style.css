@@ -1,0 +1,147 @@
+.tile {
+  width: 100px;
+  height: 100px;
+
+  color: red;
+}
+.pazl {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tile.active {
+  background-color: blue;
+}
+.part {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+.pazl2 {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.part.active {
+  border: 5px solid green;
+}
+.tr {
+  display: flex;
+  flex-direction: row;
+}
+.er {
+  display: flex;
+  flex-direction: column;
+}
+.dt {
+  width: 400px;
+  height: auto;
+}
+.ar {
+  width: 60px;
+  height: 60px;
+}
+.vr {
+  position: relative;
+}
+
+.nr {
+  top: 47%;
+  left: 77%;
+  position: absolute;
+  width: 4%;
+  height: 8%;
+}
+.ny {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  width: 8%;
+  height: 6%;
+}
+.ar.active {
+  border: 5px solid green;
+}
+.button.ac {
+  border-color: green;
+  opacity: 0.5;
+}
+.btn-main::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  top: -200px;
+  left: -200px;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 1s linear;
+}
+.btn-main {
+  color: white;
+  border-radius: 50px;
+  background-color: aqua;
+  width: max-content;
+  padding: 10px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-main:hover::before {
+  top: -25px;
+  left: -25px;
+}
+.btn-main::after {
+  content: "click";
+  position: relative;
+  z-index: 10;
+  color: white;
+}
+.btn-main-2 {
+  position: relative;
+  width: max-content;
+  padding: 10px;
+  margin: 0 auto;
+  border: 1px solid red;
+  color: red;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-main-2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -200px;
+  z-index: -1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  transition: all 1s linear;
+}
+.btn-main-2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: -200px;
+  z-index: -1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  transition: all 1s linear;
+}
+.btn-main-2:hover::before {
+  left: 0px;
+}
+.btn-main-2:hover::after {
+  right: 0px;
+}

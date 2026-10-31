@@ -1,0 +1,23 @@
+.wrapper2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.left2 {
+  display: flex;
+  flex-direction: column;
+}
+.right2 {
+  width: 375px;
+  height: auto;
+}
+.cd {
+  border: 10px;
+}
+.day-display {
+  font-size: 48px;
+  margin-top: 40px;
+  color: blue;
+  text-align: center;
+}

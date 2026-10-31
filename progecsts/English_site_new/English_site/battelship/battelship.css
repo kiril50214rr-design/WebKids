@@ -1,0 +1,36 @@
+body {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+}
+.game {
+  padding: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.info {
+  display: flex;
+  gap: 50px;
+}
+.boards {
+  display: flex;
+  gap: 10px;
+}
+.message {
+  text-align: center;
+}
+.cell {
+  width: 20px;
+  height: 20px;
+
+  background: rgb(78, 194, 233);
+}
+.board {
+  width: 174px;
+  height: 174px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}

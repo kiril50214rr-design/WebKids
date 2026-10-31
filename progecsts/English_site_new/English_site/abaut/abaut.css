@@ -1,0 +1,58 @@
+.kids-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.dh {
+  width: 200px;
+  height: 30px;
+}
+button {
+  width: max-content;
+  padding: 10px 20px;
+  border: 1px solid green;
+  background: greenyellow;
+  cursor: pointer;
+}
+.content {
+  padding: 20px;
+}
+.content {
+  padding: 20px;
+}
+
+.btn::before {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 400px;
+  top: -325px;
+  left: -3250px;
+  z-index: 1;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  transition: all 1s linear;
+}
+.btn {
+  color: white;
+  border-radius: 50px;
+  background-color: aqua;
+  width: max-content;
+  padding: 10px;
+  text-transform: capitalize;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn:hover::before {
+  top: -55px;
+  left: -55px;
+}
+.btn::after {
+  content: "Show my story";
+  position: relative;
+  z-index: 10;
+  color: white;
+}
